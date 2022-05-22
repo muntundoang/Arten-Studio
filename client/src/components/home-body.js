@@ -1,4 +1,9 @@
 import React from 'react'
+// import ImageSlider from '../assets/scripts/ImageSlider'
+// import { SliderData } from '../assets/scripts/sliderData'
+import { VideoData } from '../assets/scripts/videoData'
+import VideoSlider from '../assets/scripts/VideoSlider'
+
 
 function HomeBody() {
 
@@ -36,18 +41,14 @@ function HomeBody() {
                 </div>
             </section>
             <section>
-                <div className='container px-5 py-20 mx-auto flex'>
-                    <div className="video-responsive">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/mclmRmfhNC4"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                {/* <div className='container px-5 py-20 mx-auto flex justify-center'>
+                    <ImageSlider slides={SliderData} />
+                </div> */}
+                <div className="flex w-full items-center justify-center mb-20">
+                    <h1 className="sm:text-3xl text-2xl text-center font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Arten Videos</h1>
+                </div>
+                <div className='flex justify-center mx-auto'>
+                    <VideoSlider videos={VideoData} />
                 </div>
             </section>
         </div>
