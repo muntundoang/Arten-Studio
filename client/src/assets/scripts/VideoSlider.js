@@ -35,8 +35,8 @@ const VideoSlider = ({ videos }) => {
                                 className='image'
                                 src={slide.video}
                                 title={slide.title}
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                             </iframe>
                         )}
                     </div>

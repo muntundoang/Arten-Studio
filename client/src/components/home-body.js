@@ -10,7 +10,7 @@ function HomeBody() {
     return (
         <div>
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-20 mx-auto flex flex-wrap">
+                <div className="container px-5 py-20 mx-[192px] flex flex-wrap">
                     <div className="flex w-full mb-20 items-center justify-center">
                         <h1 className="sm:text-3xl text-2xl text-center font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Studio Sneak Peek</h1>
                     </div>
@@ -40,7 +40,7 @@ function HomeBody() {
                     </div>
                 </div>
             </section>
-            <section>
+            <div className='h-[800px]'>
                 {/* <div className='container px-5 py-20 mx-auto flex justify-center'>
                     <ImageSlider slides={SliderData} />
                 </div> */}
@@ -50,7 +50,7 @@ function HomeBody() {
                 <div className='flex justify-center mx-auto'>
                     <VideoSlider videos={VideoData} />
                 </div>
-            </section>
+            </div>
         </div>
     )
 }

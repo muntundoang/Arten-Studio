@@ -1,4 +1,7 @@
 import Home from './page/home'
+import Footer from './components/footer';
+import HomeBody from './components/home-body';
+import Calender from './components/calender';
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -6,10 +9,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}>
-          {/* <Route path="" element={<Card/>}/>
-          <Route path='detail'>
-            <Route path=':id' element={<Detailed/>} />
-          </Route> */}
+          <Route path="" element={<HomeBody/>}/>
+          <Route path="booking" element={<Calender/>}/>
         </Route>
       </Routes>
     </div>

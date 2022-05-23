@@ -1,13 +1,13 @@
-import Navbar from '../components/navbar'
-import HomeBody from '../components/home-body';
-import { Outlet} from 'react-router-dom'
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+import { Outlet} from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className="App">
             <Navbar />
-            <HomeBody />
             <Outlet/>
+            <Footer/>
         </div>
     );
 }
